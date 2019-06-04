@@ -43,9 +43,9 @@ import {
 import createStyles from './styles';
 import {Close, Prev, Next} from './controls';
 
-const IMAGE_SPEED_FOR_CLOSE = 1.1;
+const IMAGE_SPEED_FOR_CLOSE = 0.8;
 const SCALE_MAXIMUM = 5;
-const HEADER_HEIGHT = 60;
+const HEADER_HEIGHT = 100;
 const SCALE_MAX_MULTIPLIER = 3;
 const FREEZE_SCROLL_DISTANCE = 15;
 const BACKGROUND_OPACITY_MULTIPLIER = 0.003;
