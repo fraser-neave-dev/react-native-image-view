@@ -440,10 +440,10 @@ export default class ImageView extends Component<PropsType, StateType> {
 
                 this.togglePanels(scale === imageInitialScale);
             } else {
-                this.doubleTapTimer = setTimeout(() => {
-                    this.togglePanels();
-                    this.doubleTapTimer = null;
-                }, 200);
+                // this.doubleTapTimer = setTimeout(() => {
+                //     this.togglePanels();
+                //     this.doubleTapTimer = null;
+                // }, 200);
             }
         }
 
