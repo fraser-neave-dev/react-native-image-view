@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     closeButton__text: {
         backgroundColor: 'transparent',
         fontSize: 40,
-        lineHeight: 45,
+        lineHeight: 42,
         color: '#FFF',
         textAlign: 'center',
     },
