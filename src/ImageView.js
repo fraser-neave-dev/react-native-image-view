@@ -198,7 +198,7 @@ export default class ImageView extends Component<PropsType, StateType> {
                 isFlatListRerendered: false,
             });
 
-            this.modalBackgroundOpacity.setValue(0);
+            this.modalBackgroundOpacity.setValue(0.5);
 
             if (this.props.isVisible) {
                 Animated.timing(this.modalAnimation, {
@@ -357,9 +357,9 @@ export default class ImageView extends Component<PropsType, StateType> {
             );
 
             this.imageTranslateValue.y.setValue(y + dy);
-            this.modalBackgroundOpacity.setValue(
-                backgroundOpacity > 1 ? 1 : backgroundOpacity
-            );
+            // this.modalBackgroundOpacity.setValue(
+            //     backgroundOpacity > 1 ? 1 : backgroundOpacity
+            // );
         }
 
         const currentDistance = getDistance(touches);
@@ -455,12 +455,12 @@ export default class ImageView extends Component<PropsType, StateType> {
 
         Animated.parallel(
             [
-                modalBackgroundOpacity > 0
-                    ? Animated.timing(this.modalBackgroundOpacity, {
-                          toValue: 0,
-                          duration: 100,
-                      })
-                    : null,
+                // modalBackgroundOpacity > 0
+                //     ? Animated.timing(this.modalBackgroundOpacity, {
+                //           toValue: 0,
+                //           duration: 100,
+                //       })
+                //     : null,
                 Animated.timing(this.imageTranslateValue.x, {
                     toValue: x,
                     duration: 100,
